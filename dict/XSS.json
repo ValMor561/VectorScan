@@ -1,0 +1,4 @@
+[ 
+    "<script>alert('XSS')</script>", 
+    "%3Cscript%3Ealert('XSS')%3C/script%3E"
+]
