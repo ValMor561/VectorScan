@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun May  7 17:56:33 2023 as: nmap -&#45;script ftp-bounce,ftp-vuln-cve2010-4221,ftp-libopie -p 21 -oX scanresult/10.10.219.90/ftp/scriptres.xml 10.10.219.90 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script ftp-bounce,ftp-vuln-cve2010-4221,ftp-libopie -p 21 -oX scanresult/10.10.219.90/ftp/scriptres.xml 10.10.219.90" start="1683471393" startstr="Sun May  7 17:56:33 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="21"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.219.90" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1683471394" endtime="1683471396"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.219.90" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="239375" rttvar="219750" to="1118375"/>
+</host>
+<runstats><finished time="1683471396" timestr="Sun May  7 17:56:36 2023" summary="Nmap done at Sun May  7 17:56:36 2023; 1 IP address (1 host up) scanned in 2.49 seconds" elapsed="2.49" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

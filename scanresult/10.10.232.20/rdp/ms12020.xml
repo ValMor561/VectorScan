@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May 20 22:15:54 2023 as: nmap -&#45;script rdp-vuln-ms12-020 -p 3389 -oX scanresult/10.10.232.20/rdp/ms12020.xml 10.10.232.20 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script rdp-vuln-ms12-020 -p 3389 -oX scanresult/10.10.232.20/rdp/ms12020.xml 10.10.232.20" start="1684610154" startstr="Sat May 20 22:15:54 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.232.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1684610155" endtime="1684610215"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.232.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+</ports>
+<times srtt="65000" rttvar="51500" to="271000"/>
+</host>
+<runstats><finished time="1684610215" timestr="Sat May 20 22:16:55 2023" summary="Nmap done at Sat May 20 22:16:55 2023; 1 IP address (1 host up) scanned in 60.74 seconds" elapsed="60.74" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

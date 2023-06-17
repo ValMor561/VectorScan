@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May  6 18:23:31 2023 as: nmap -sV -&#45;script ftp-anon -p 21 -oX scanresult/127.0.0.1/ftp/anonscan.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script ftp-anon -p 21 -oX scanresult/127.0.0.1/ftp/anonscan.xml 127.0.0.1" start="1683386611" startstr="Sat May  6 18:23:31 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="21"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1683386612" endtime="1683386612"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost.localdomain" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="65"/><service name="ftp" method="table" conf="3"/></port>
+</ports>
+<times srtt="1000" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1683386612" timestr="Sat May  6 18:23:32 2023" summary="Nmap done at Sat May  6 18:23:32 2023; 1 IP address (1 host up) scanned in 0.70 seconds" elapsed="0.70" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

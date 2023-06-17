@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:07:57 2023 as: nmap -sV -&#45;script http-devframework -p 80 -oX scanresult/10.10.2.130/web/cmsscan.xml 10.10.2.130 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-devframework -p 80 -oX scanresult/10.10.2.130/web/cmsscan.xml 10.10.2.130" start="1685020077" startstr="Thu May 25 16:07:57 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>

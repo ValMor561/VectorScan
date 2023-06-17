@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun May 21 09:58:48 2023 as: nmap -&#45;script smb-enum-users,smb-enum-shares -p 445 -oX scanresult/10.10.135.135/smb/scriptscan.xml 10.10.135.135 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script smb-enum-users,smb-enum-shares -p 445 -oX scanresult/10.10.135.135/smb/scriptscan.xml 10.10.135.135" start="1684652328" startstr="Sun May 21 09:58:48 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.135.135" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1684652329" endtime="1684652329"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.135.135" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-enum-users" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-enum-shares" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="57750" rttvar="44000" to="233750"/>
+</host>
+<runstats><finished time="1684652329" timestr="Sun May 21 09:58:49 2023" summary="Nmap done at Sun May 21 09:58:49 2023; 1 IP address (1 host up) scanned in 0.71 seconds" elapsed="0.71" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

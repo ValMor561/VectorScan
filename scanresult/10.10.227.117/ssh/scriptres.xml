@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 15:55:28 2023 as: nmap -&#45;script ssh-hostkey,ssh-publickey-acceptance,ssh-auth-methods -p 22 -oX scanresult/10.10.227.117/ssh/scriptres.xml 10.10.227.117 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script ssh-hostkey,ssh-publickey-acceptance,ssh-auth-methods -p 22 -oX scanresult/10.10.227.117/ssh/scriptres.xml 10.10.227.117" start="1685019328" startstr="Thu May 25 15:55:28 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.227.117" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685019329" endtime="1685019336"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.227.117" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 b9a60b841d2201a401304843612bab94 (RSA)&#xa;  256 ec13258c182036e6ce910e1626eba2be (ECDSA)&#xa;  256 a2ff2a7281aaa29f55a4dc9223e6b43f (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDAzds8QxN5Q2TsERsJ98huSiuasmToUDi9JYWVegfTMV4Fn7t6/2ENm/9uYblUv+pLBnYeGo3XQGV23foZIIVMlLaC6ulYwuDOxy6KtHauVMlPRvYQd77xSCUqcM1ov9d00Y2y5eb7S6E7zIQCGFhm/jj5ui6bcr6wAIYtfpJ8UXnlHg5f/mJgwwAteQoUtxVgQWPsmfcmWvhreJ0/BF0kZJqi6uJUfOZHoUm4woJ15UYioryT6ZIw/ORL6l/LXy2RlhySNWi6P9y8UXrgKdViIlNCun7Cz80Cfc16za/8cdlthD1czxm4m5hSVwYYQK3C7mDZ0/jung0/AJzl48X1</elem>
+<elem key="fingerprint">b9a60b841d2201a401304843612bab94</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOKJ0cuq3nTYxoHlMcS3xvNisI5sKawbZHhAamhgDZTM989wIUonhYU19Jty5+fUoJKbaPIEBeMmA32XhHy+Y+E=</elem>
+<elem key="fingerprint">ec13258c182036e6ce910e1626eba2be</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPnFr/4W5WTyh9XBSykso6eSO6tE0Aio3gWM8Zdsckwo</elem>
+<elem key="fingerprint">a2ff2a7281aaa29f55a4dc9223e6b43f</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>password</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="222250" rttvar="168250" to="895250"/>
+</host>
+<runstats><finished time="1685019336" timestr="Thu May 25 15:55:36 2023" summary="Nmap done at Thu May 25 15:55:36 2023; 1 IP address (1 host up) scanned in 8.33 seconds" elapsed="8.33" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun May 21 09:58:16 2023 as: nmap -sV -&#45;script http-methods,http-title,http-trace -p 80 -oX scanresult/10.10.135.135/web/scriptscan.xml 10.10.135.135 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-methods,http-title,http-trace -p 80 -oX scanresult/10.10.135.135/web/scriptscan.xml 10.10.135.135" start="1684652296" startstr="Sun May 21 09:58:16 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.135.135" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1684652296" endtime="1684652303"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.135.135" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="55875" rttvar="42250" to="224875"/>
+</host>
+<runstats><finished time="1684652303" timestr="Sun May 21 09:58:23 2023" summary="Nmap done at Sun May 21 09:58:23 2023; 1 IP address (1 host up) scanned in 7.11 seconds" elapsed="7.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

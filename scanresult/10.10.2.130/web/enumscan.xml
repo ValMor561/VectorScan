@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:07:04 2023 as: nmap -sV -&#45;script http-enum -p 80 -oX scanresult/10.10.2.130/web/enumscan.xml 10.10.2.130 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-enum -p 80 -oX scanresult/10.10.2.130/web/enumscan.xml 10.10.2.130" start="1685020024" startstr="Thu May 25 16:07:04 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685020025" endtime="1685020066"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.2.16" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.16</cpe></service><script id="http-server-header" output="Apache/2.2.16 (Debian)"><elem>Apache/2.2.16 (Debian)</elem>
+</script><script id="http-enum" output="&#xa;  /html/: Potentially interesting directory w/ listing on &apos;apache/2.2.16 (debian)&apos;&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;"/></port>
+</ports>
+<times srtt="363625" rttvar="281000" to="1487625"/>
+</host>
+<runstats><finished time="1685020066" timestr="Thu May 25 16:07:46 2023" summary="Nmap done at Thu May 25 16:07:46 2023; 1 IP address (1 host up) scanned in 42.07 seconds" elapsed="42.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

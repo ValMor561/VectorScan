@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 15:55:39 2023 as: nmap -sV -&#45;script http-enum -p 80 -oX scanresult/10.10.227.117/web/enumscan.xml 10.10.227.117 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-enum -p 80 -oX scanresult/10.10.227.117/web/enumscan.xml 10.10.227.117" start="1685019339" startstr="Thu May 25 15:55:39 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.227.117" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>

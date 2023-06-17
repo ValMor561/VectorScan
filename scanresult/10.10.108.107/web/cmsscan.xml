@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May 20 21:55:18 2023 as: nmap -sV -&#45;script http-devframework -p 80 -oX scanresult/10.10.108.107/web/cmsscan.xml 10.10.108.107 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-devframework -p 80 -oX scanresult/10.10.108.107/web/cmsscan.xml 10.10.108.107" start="1684608918" startstr="Sat May 20 21:55:18 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.108.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1684608918" endtime="1684608926"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.108.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.2.16" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.16</cpe></service><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-server-header" output="Apache/2.2.16 (Debian)"><elem>Apache/2.2.16 (Debian)</elem>
+</script></port>
+</ports>
+<times srtt="61125" rttvar="46000" to="245125"/>
+</host>
+<runstats><finished time="1684608926" timestr="Sat May 20 21:55:26 2023" summary="Nmap done at Sat May 20 21:55:26 2023; 1 IP address (1 host up) scanned in 8.28 seconds" elapsed="8.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

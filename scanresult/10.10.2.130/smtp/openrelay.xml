@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:06:46 2023 as: nmap -&#45;script smtp-open-relay -p 25 -oX scanresult/10.10.2.130/smtp/openrelay.xml 10.10.2.130 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script smtp-open-relay -p 25 -oX scanresult/10.10.2.130/smtp/openrelay.xml 10.10.2.130" start="1685020006" startstr="Thu May 25 16:06:46 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="25"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685020007" endtime="1685020013"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/><script id="smtp-open-relay" output="SMTP RSET: failed to receive data: connection closed"/></port>
+</ports>
+<times srtt="313875" rttvar="260500" to="1355875"/>
+</host>
+<runstats><finished time="1685020013" timestr="Thu May 25 16:06:53 2023" summary="Nmap done at Thu May 25 16:06:53 2023; 1 IP address (1 host up) scanned in 7.62 seconds" elapsed="7.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 15:47:03 2023 as: nmap -&#45;script smb-os-discovery -p 445 -oX scanresult/127.0.0.1/smb/osdiscovery.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script smb-os-discovery -p 445 -oX scanresult/127.0.0.1/smb/osdiscovery.xml 127.0.0.1" start="1685018823" startstr="Thu May 25 15:47:03 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1685018823" endtime="1685018824"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="65"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="1000" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1685018824" timestr="Thu May 25 15:47:04 2023" summary="Nmap done at Thu May 25 15:47:04 2023; 1 IP address (1 host up) scanned in 1.59 seconds" elapsed="1.59" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:05:55 2023 as: nmap -&#45;script ssh-hostkey,ssh-publickey-acceptance,ssh-auth-methods -p 22 -oX scanresult/10.10.2.130/ssh/scriptres.xml 10.10.2.130 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script ssh-hostkey,ssh-publickey-acceptance,ssh-auth-methods -p 22 -oX scanresult/10.10.2.130/ssh/scriptres.xml 10.10.2.130" start="1685019955" startstr="Thu May 25 16:05:55 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685019956" endtime="1685019962"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.2.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh-hostkey" output="&#xa;  1024 a46cd1c85b03f2af333f8415cf15edba (DSA)&#xa;  2048 08843e964d9a2fa1dbbe682980abf356 (RSA)"><table>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">a46cd1c85b03f2af333f8415cf15edba</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBANyvKp7Ve6+M6E1Z6G42QHjNNitKlBUbBiwKTkhul73GabHGWvBSe3zENfm/cYjKznvpdewTHU1yQ7RPl/dE6ddDUMixFyxSLNiKThWR9jWSSPLROZeqvCyYWrE+vhxQdprueoU4QroJlnVHmBEM9p1NL/fGdx5Wgk8dNQmzmTZ5AAAAFQC5mHXWWAV+hHkRTzB17L+LGgTeIQAAAIEAjLGC5DFsrmqSgcyz4pw/McCMMaLg9B1btJArzAO82tV41CejQY9MXSNkrwarWgVe6PngxKW+i1DyHZJc2Qw5Swd2vrWJc9ApmevgDFRlZgOQiELzjQHMrJVxGDACmvJwxGoCMlSMOvroi/I94yy7BqhMC8bdZuGp/9LsZmXyZcgAAACABdKkvVptfEOfnPJW5ZicE/5tjxmn0rd7rUqsvEsV7MrzSEpnZ1y5FeUcBUexJpeb4LMkTtb33NFiKOBZGQFwpdxW0llZwzDutQW1C1AcF+r5myelRc4gDImmRPO71arXC2y106Rko227hqFhuYVTVZUq01G0et9APRxw2cUcl7Y=</elem>
+</table>
+<table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">08843e964d9a2fa1dbbe682980abf356</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDSAFdGfYZl8iFoHlT5Gi/ZPPHKqURUX5sLkVImX38+o9AqfvEZC4RNo0nZ600DrEREpMHPjr6PCWUH0oADZtNtOBOG6S1wuErfpfp8Hv7mnYJkJCNoxtY85qJ5cA6i6Bn3VU/e1SBTIFPp4FmQNJtRbODyQL4whkadksYoZBM+a3uYQp0yRE/3Byq/+a1vGLPXGxWkBsrmGusfBpucYwITPk+NqWlrKVc5vgxFXSuFyFkKyUxP6IwPcVECe+LRIgmXAEizv3/Fwr1m71sFTfBJ134jivMGjdybtnmQ4AykScY2qD+lzAXMZy8pKCM8F8pzISHM3qKif7rn38iSVCQV</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="75625" rttvar="57500" to="305625"/>
+</host>
+<runstats><finished time="1685019962" timestr="Thu May 25 16:06:02 2023" summary="Nmap done at Thu May 25 16:06:02 2023; 1 IP address (1 host up) scanned in 7.43 seconds" elapsed="7.43" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

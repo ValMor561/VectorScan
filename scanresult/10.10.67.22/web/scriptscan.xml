@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:14:25 2023 as: nmap -sV -&#45;script http-methods,http-title,http-trace -p 80 -oX scanresult/10.10.67.22/web/scriptscan.xml 10.10.67.22 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-methods,http-title,http-trace -p 80 -oX scanresult/10.10.67.22/web/scriptscan.xml 10.10.67.22" start="1685020465" startstr="Thu May 25 16:14:25 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.67.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685020466" endtime="1685020473"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.67.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS GET HEAD"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="93000" rttvar="75250" to="394000"/>
+</host>
+<runstats><finished time="1685020473" timestr="Thu May 25 16:14:33 2023" summary="Nmap done at Thu May 25 16:14:33 2023; 1 IP address (1 host up) scanned in 7.85 seconds" elapsed="7.85" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

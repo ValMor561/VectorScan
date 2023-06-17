@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu May 25 16:24:25 2023 as: nmap -&#45;script rdp-enum-encryption,rdp-ntlm-info -p 3389 -oX scanresult/10.10.32.148/rdp/scriptscan.xml 10.10.32.148 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script rdp-enum-encryption,rdp-ntlm-info -p 3389 -oX scanresult/10.10.32.148/rdp/scriptscan.xml 10.10.32.148" start="1685021065" startstr="Thu May 25 16:24:25 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.32.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1685021066" endtime="1685021071"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.32.148" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/><script id="rdp-enum-encryption" output="Received unhandled packet"/></port>
+</ports>
+<times srtt="118125" rttvar="90000" to="478125"/>
+</host>
+<runstats><finished time="1685021071" timestr="Thu May 25 16:24:31 2023" summary="Nmap done at Thu May 25 16:24:31 2023; 1 IP address (1 host up) scanned in 6.60 seconds" elapsed="6.60" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

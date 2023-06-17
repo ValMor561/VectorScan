@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May 20 21:54:20 2023 as: nmap -&#45;script smtp-vuln-cve2011-1764 -p 25 -oX scanresult/10.10.108.107/smtp/eternalblue.xml 10.10.108.107 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script smtp-vuln-cve2011-1764 -p 25 -oX scanresult/10.10.108.107/smtp/eternalblue.xml 10.10.108.107" start="1684608860" startstr="Sat May 20 21:54:20 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="25"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.108.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1684608860" endtime="1684608866"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.108.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/></port>
+</ports>
+<times srtt="64250" rttvar="50250" to="265250"/>
+</host>
+<runstats><finished time="1684608866" timestr="Sat May 20 21:54:26 2023" summary="Nmap done at Sat May 20 21:54:26 2023; 1 IP address (1 host up) scanned in 5.55 seconds" elapsed="5.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
