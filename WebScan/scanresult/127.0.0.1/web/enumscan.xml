@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri May  5 16:39:09 2023 as: nmap -sV -&#45;script http-enum -p 8012 -oX scanresult/127.0.0.1/web/enumscan.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script http-enum -p 8012 -oX scanresult/127.0.0.1/web/enumscan.xml 127.0.0.1" start="1683293949" startstr="Fri May  5 16:39:09 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8012"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1683293950" endtime="1683293969"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="8012"><state state="open" reason="syn-ack" reason_ttl="65"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="OpenSSL/1.1.1c" hostname="localhost" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-enum" output="&#xa;  /: Root directory w/ listing on &apos;apache/2.4.41 (win64) openssl/1.1.1c&apos;&#xa;  /test.php: Test page&#xa;  /phpmyadmin/: phpMyAdmin&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /licenses/: Potentially interesting directory w/ listing on &apos;apache/2.4.41 (win64) openssl/1.1.1c&apos;&#xa;  /server-info/: Potentially interesting folder&#xa;  /server-status/: Potentially interesting folder&#xa;  /tests/: Potentially interesting folder&#xa;"/><script id="http-server-header" output="Apache/2.4.41 (Win64) OpenSSL/1.1.1c"><elem>Apache/2.4.41 (Win64) OpenSSL/1.1.1c</elem>
+</script></port>
+</ports>
+<times srtt="0" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1683293969" timestr="Fri May  5 16:39:29 2023" summary="Nmap done at Fri May  5 16:39:29 2023; 1 IP address (1 host up) scanned in 19.82 seconds" elapsed="19.82" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
